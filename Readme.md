@@ -1,8 +1,5 @@
 <a name="readme-top"></a>
 <div align="center">
-
- 
-  
   <br/>
 
   <h3><b>To do List</b></h3
