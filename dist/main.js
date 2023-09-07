@@ -95,6 +95,186 @@ nav {
   transform-origin: left center;
 }
 
+#list {
+  margin-top: 10%; /* Increase the margin-top for more spacing */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px; /* Increase the gap for better separation */
+  width: calc(33.33% - 20px); /* Adjust the width for better alignment */
+  padding: 15px; /* Increase padding for a softer look */
+  margin-bottom: 20px; /* Increase margin-bottom for better spacing */
+  border: 1px solid #e0e0e0; /* Use a lighter border color */
+  border-radius: 8px; /* Increase border radius for rounded corners */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: transform 0.3s;
+}
+
+.meal img {
+  width: 100%;
+  border-radius: 8px; /* Match border radius for consistency */
+}
+
+.meal img:hover {
+  transform: scale(1.05); /* Slightly reduce the scale factor for a smoother hover effect */
+}
+
+/* Updated Modal Styles with New Class Names */
+.modal-beautiful {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.774);
+  backdrop-filter: blur(5px);
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadein;
+  animation-duration: 0.4s;
+}
+
+/* Updated Modal Content Styles for a Smaller Modal */
+.modal-content-beautiful {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px; /* Adjust the maximum width as needed */
+  width: 90%; /* Adjust the width as needed */
+}
+
+/* Updated Close Button Styles */
+.close-beautiful {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-beautiful:hover,
+.close-beautiful:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Updated Item Section Styles */
+.itemSection-beautiful {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+/* Updated Comment Section Styles */
+.commentSection-beautiful {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+/* Updated Comment Box Styles */
+.commentBox-beautiful {
+  display: flex;
+  flex-direction: column;
+  background-color: #efeaea;
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+
+/* Updated Comment Text Styles */
+.commentText-beautiful, .comment-name {
+  font-size: medium;
+  color: #5a5858;
+}
+
+/* Updated Date Styles */
+.date-beautiful {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Updated Image Styles to Fit Within Modal */
+.img-beautiful {
+  max-width: 100%; /* Ensure the image fits within the modal */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any residual padding/margin */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Updated Styles for the "Add Comment" Button */
+.comments-button-beautiful {
+  background-color: #4CAF50; /* Change the background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding for the button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.comments-button-beautiful:hover {
+  background-color: #45a049; /* Darker background color on hover */
+}
+
+/* Updated Comment Title Styles */
+.commentTitle-beautiful {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Updated Username Input Styles */
+.usernameInput-beautiful {
+  margin-bottom: 1rem;
+  padding: 12px;
+  width: 100%;
+}
+
+/* Updated Textarea Styles */
+.textarea-beautiful {
+  margin-bottom: 1rem;
+  padding: 12px;
+  width: 100%;
+}
+
+/* Updated Likes Container Styles */
+.likes-container-beautiful {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Updated Likes Icon Styles */
+.likes-icon-beautiful {
+  font-size: 2em;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.likes-icon-beautiful:hover {
+  transform: scale(1.1);
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -102,7 +282,7 @@ footer {
   background-color: rgb(230, 196, 196); /* Set your preferred background color */
   text-align: center;
   padding: 10px 0;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,qBAAA;EACA,UAAA;EACA,SAAA;EACA,kCAAA;AACJ;;AAEA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,8BAAA;EACA,aAAA;EACA,uCAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,QAAA;EACA,UAAA;EACA,YAAA;AACJ;;AAEE;EACE,aAAA;EACA,mBAAA;EACA,WAAA;EACA,iBAAA,EAAA,uCAAA;AACJ;;AAEE;EACE,gBAAA,EAAA,qCAAA;EACA,kBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,UAAA;EACA,SAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEE;EACE,cAAA,EAAA,0CAAA;EACA,kBAAA;AACJ;;AAEE;EACE,qBAAA;EACA,WAAA;EACA,eAAA,EAAA,mCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,YAAA;EACA,OAAA;EACA,WAAA;EACA,WAAA;EACA,gBAAA;EACA,oBAAA;EACA,8BAAA;EACA,sCAAA;AACJ;;AAEE;EACE,oBAAA;EACA,6BAAA;AACJ;;AAIE;EACE,eAAA;EACA,SAAA;EACA,WAAA;EACA,oCAAA,EAAA,wCAAA;EACA,kBAAA;EACA,eAAA;AADJ","sourcesContent":["* {\n    box-sizing: border-box;\n    text-decoration: none;\n    padding: 0;\n    margin: 0;\n    font-family: 'Poppins', sans-serif;\n  }\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background: rgb(230, 196, 196);\n    padding: 1% 0;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    z-index: 1;\n    height: 70px;\n  }\n  \n  nav {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    max-width: 1200px; /* Adjust the maximum width as needed */\n  }\n  \n  .logo-container img {\n    max-height: 50px; /* Adjust the logo height as needed */\n    margin-right: 20px;\n  }\n  \n  .menu {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n  }\n  \n  .menu li {\n    margin: 0 15px; /* Adjust the spacing between menu items */\n    position: relative;\n  }\n  \n  .menu a {\n    text-decoration: none;\n    color: #333;\n    font-size: 18px; /* Adjust the font size as needed */\n    font-weight: bold;\n  }\n  \n  .menu span {\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    width: 100%;\n    height: 2px;\n    background: #333;\n    transform: scaleX(0);\n    transform-origin: right center;\n    transition: transform 0.3s ease-in-out;\n  }\n  \n  .menu li:hover span {\n    transform: scaleX(1);\n    transform-origin: left center;\n  }\n  \n\n  \n  footer {\n    position: fixed;\n    bottom: 0;\n    width: 100%;\n    background-color: rgb(230, 196, 196); /* Set your preferred background color */\n    text-align: center;\n    padding: 10px 0;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"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","sourcesContent":["* {\n    box-sizing: border-box;\n    text-decoration: none;\n    padding: 0;\n    margin: 0;\n    font-family: 'Poppins', sans-serif;\n  }\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background: rgb(230, 196, 196);\n    padding: 1% 0;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    z-index: 1;\n    height: 70px;\n  }\n  \n  nav {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    max-width: 1200px; /* Adjust the maximum width as needed */\n  }\n  \n  .logo-container img {\n    max-height: 50px; /* Adjust the logo height as needed */\n    margin-right: 20px;\n  }\n  \n  .menu {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n  }\n  \n  .menu li {\n    margin: 0 15px; /* Adjust the spacing between menu items */\n    position: relative;\n  }\n  \n  .menu a {\n    text-decoration: none;\n    color: #333;\n    font-size: 18px; /* Adjust the font size as needed */\n    font-weight: bold;\n  }\n  \n  .menu span {\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    width: 100%;\n    height: 2px;\n    background: #333;\n    transform: scaleX(0);\n    transform-origin: right center;\n    transition: transform 0.3s ease-in-out;\n  }\n  \n  .menu li:hover span {\n    transform: scaleX(1);\n    transform-origin: left center;\n  }\n  \n\n \n\n  #list {\n    margin-top: 10%; /* Increase the margin-top for more spacing */\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n  }\n  \n  .meal {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    gap: 10px; /* Increase the gap for better separation */\n    width: calc(33.33% - 20px); /* Adjust the width for better alignment */\n    padding: 15px; /* Increase padding for a softer look */\n    margin-bottom: 20px; /* Increase margin-bottom for better spacing */\n    border: 1px solid #e0e0e0; /* Use a lighter border color */\n    border-radius: 8px; /* Increase border radius for rounded corners */\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */\n    transition: transform 0.3s;\n  }\n  \n  .meal img {\n    width: 100%;\n    border-radius: 8px; /* Match border radius for consistency */\n  }\n  \n  .meal img:hover {\n    transform: scale(1.05); /* Slightly reduce the scale factor for a smoother hover effect */\n  }\n    /* Updated Modal Styles with New Class Names */\n.modal-beautiful {\n    display: none;\n    align-items: center;\n    justify-content: center;\n    position: fixed;\n    z-index: 1;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    overflow: auto;\n    background-color: rgba(0, 0, 0, 0.774);\n    backdrop-filter: blur(5px);\n    -webkit-animation-name: fadein;\n    -webkit-animation-duration: 0.4s;\n    animation-name: fadein;\n    animation-duration: 0.4s;\n  }\n  \n/* Updated Modal Content Styles for a Smaller Modal */\n.modal-content-beautiful {\n    background-color: #fefefe;\n    margin: auto;\n    padding: 20px;\n    border: 1px solid #888;\n    max-width: 500px; /* Adjust the maximum width as needed */\n    width: 90%; /* Adjust the width as needed */\n  }\n  \n  \n  /* Updated Close Button Styles */\n  .close-beautiful {\n    color: #aaa;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n  }\n  \n  .close-beautiful:hover,\n  .close-beautiful:focus {\n    color: #000;\n    text-decoration: none;\n    cursor: pointer;\n  }\n  \n  /* Updated Item Section Styles */\n  .itemSection-beautiful {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n    width: 100%;\n    align-items: flex-start;\n    padding: 1rem;\n  }\n  \n  /* Updated Comment Section Styles */\n  .commentSection-beautiful {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n    width: 100%;\n    align-items: flex-start;\n    padding: 1rem;\n  }\n  \n  /* Updated Comment Box Styles */\n  .commentBox-beautiful {\n    display: flex;\n    flex-direction: column;\n    background-color: #efeaea;\n    width: 100%;\n    padding: 1.5rem 1rem;\n  }\n  \n  /* Updated Comment Text Styles */\n  .commentText-beautiful, .comment-name {\n    font-size: medium;\n    color: #5a5858;\n  }\n  \n  /* Updated Date Styles */\n  .date-beautiful {\n    color: #aaa;\n    font-style: italic;\n  }\n  \n /* Updated Image Styles to Fit Within Modal */\n.img-beautiful {\n    max-width: 100%; /* Ensure the image fits within the modal */\n    height: auto; /* Maintain aspect ratio */\n    display: block; /* Remove any residual padding/margin */\n    margin: 0 auto; /* Center the image horizontally */\n  }\n  \n  /* Updated Styles for the \"Add Comment\" Button */\n.comments-button-beautiful {\n    background-color: #4CAF50; /* Change the background color */\n    color: white; /* Text color */\n    padding: 12px 20px; /* Padding for the button */\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n    font-size: 16px;\n    transition: background-color 0.3s ease; /* Smooth background color transition */\n  }\n  \n  .comments-button-beautiful:hover {\n    background-color: #45a049; /* Darker background color on hover */\n  }\n  \n  /* Updated Comment Title Styles */\n  .commentTitle-beautiful {\n    padding: 2rem;\n    display: flex;\n    justify-content: center;\n  }\n  \n  /* Updated Username Input Styles */\n  .usernameInput-beautiful {\n    margin-bottom: 1rem;\n    padding: 12px;\n    width: 100%;\n  }\n  \n  /* Updated Textarea Styles */\n  .textarea-beautiful {\n    margin-bottom: 1rem;\n    padding: 12px;\n    width: 100%;\n  }\n  \n  /* Updated Likes Container Styles */\n  .likes-container-beautiful {\n    display: flex;\n    justify-content: right;\n    align-items: center;\n    gap: 1em;\n  }\n  \n  /* Updated Likes Icon Styles */\n  .likes-icon-beautiful {\n    font-size: 2em;\n    cursor: pointer;\n    transition: transform 0.4s;\n  }\n  \n  .likes-icon-beautiful:hover {\n    transform: scale(1.1);\n  }\n  \n  footer {\n    position: fixed;\n    bottom: 0;\n    width: 100%;\n    background-color: rgb(230, 196, 196); /* Set your preferred background color */\n    text-align: center;\n    padding: 10px 0;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -549,6 +729,111 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/modules/renderList.js":
+/*!***********************************!*\
+  !*** ./src/modules/renderList.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   displayMeals: () => (/* binding */ displayMeals),
+/* harmony export */   fetchCategoryMeals: () => (/* binding */ fetchCategoryMeals),
+/* harmony export */   sendLike: () => (/* binding */ sendLike),
+/* harmony export */   updateLikesCount: () => (/* binding */ updateLikesCount)
+/* harmony export */ });
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './popupModal.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+const newApiKey = '1';
+const newApiBaseUrl = 'https://www.themealdb.com/api/json/v1';
+const newAppId = 'RjyF2atccOw1gRFQE3W0';
+const newInvolvementApiBaseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi';
+
+const mealListContainer = document.getElementById('list');
+
+const fetchCategoryMeals = async (category) => {
+  const res = await fetch(`${newApiBaseUrl}/${newApiKey}/filter.php?c=${category}`);
+  const data = await res.json();
+  return data.meals || [];
+};
+
+const fetchMealLikes = async (mealName) => {
+  const res = await fetch(`${newInvolvementApiBaseUrl}/apps/${newAppId}/likes`);
+  const data = await res.json();
+  const mealLikes = data.find((item) => item.item_id === mealName);
+  return mealLikes ? mealLikes.likes : 0;
+};
+
+const updateLikesCount = (element, count) => {
+  element.textContent = `${count} Likes`;
+};
+
+const sendLike = async (mealName) => {
+  const requestBody = {
+    item_id: mealName,
+  };
+
+  const res = await fetch(`${newInvolvementApiBaseUrl}/apps/${newAppId}/likes`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(requestBody),
+  });
+  return res.status === 201;
+};
+
+const displayMeals = async (meals) => {
+  mealListContainer.innerHTML = '';
+
+  meals.forEach(async (meal) => {
+    const mealElement = document.createElement('div');
+    mealElement.classList.add('meal');
+
+    const mealImage = document.createElement('img');
+    mealImage.src = `${meal.strMealThumb}/preview`;
+    mealImage.alt = meal.strMeal;
+
+    const mealTitle = document.createElement('h3');
+    mealTitle.textContent = meal.strMeal;
+
+    const likesContainer = document.createElement('div');
+    likesContainer.classList.add('likes-container-beautiful');
+
+    const likesIcon = document.createElement('span');
+    likesIcon.classList.add('likes-icon');
+    likesIcon.textContent = '❤️';
+
+    const likesCount = document.createElement('span');
+    likesCount.classList.add('likes-count');
+
+    const commentsButton = document.createElement('button');
+    commentsButton.textContent = 'Comments';
+    commentsButton.classList.add('comments-button-beautiful');
+
+    commentsButton.addEventListener('click', () => Object(function webpackMissingModule() { var e = new Error("Cannot find module './popupModal.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(meal.idMeal));
+
+    likesContainer.appendChild(likesIcon);
+    likesContainer.appendChild(likesCount);
+
+    mealElement.appendChild(mealImage);
+    mealElement.appendChild(mealTitle);
+    mealElement.appendChild(likesContainer);
+    mealElement.appendChild(commentsButton);
+
+    mealListContainer.appendChild(mealElement);
+
+    const likes = await fetchMealLikes(meal.strMeal);
+    updateLikesCount(likesCount, likes);
+  });
+};
+
+
+
+
+/***/ }),
+
 /***/ "./src/logo.png":
 /*!**********************!*\
   !*** ./src/logo.png ***!
@@ -676,8 +961,48 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logo.png */ "./src/logo.png");
+/* harmony import */ var _modules_renderList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/renderList */ "./src/modules/renderList.js");
 
 
+
+
+
+const headerLinks = document.querySelectorAll('header a');
+const mealListContainer = document.getElementById('list');
+
+const renderMealCategory = async (category) => {
+  const categoryMeals = await (0,_modules_renderList__WEBPACK_IMPORTED_MODULE_2__.fetchCategoryMeals)(category);
+  (0,_modules_renderList__WEBPACK_IMPORTED_MODULE_2__.displayMeals)(categoryMeals);
+};
+
+const setupHeaderLinkListeners = () => {
+  headerLinks.forEach((link) => {
+    const { dataset: { category } } = link;
+    link.addEventListener('click', async (e) => {
+      e.preventDefault();
+      await renderMealCategory(category);
+    });
+  });
+};
+
+const initializeApp = async () => {
+  await renderMealCategory('Seafood');
+};
+
+mealListContainer.addEventListener('click', async (e) => {
+  if (e.target.classList.contains('likes-icon')) {
+    const mealTitleElement = e.target.closest('.meal').querySelector('h3');
+    const mealTitle = mealTitleElement.textContent;
+    const likesCountElement = e.target.nextElementSibling;
+    const currentLikes = parseInt(likesCountElement.textContent, 10);
+    const updatedLikes = currentLikes + 1;
+    if (success) {
+      (0,_modules_renderList__WEBPACK_IMPORTED_MODULE_2__.updateLikesCount)(likesCountElement, updatedLikes);
+    }
+  }
+});
+
+initializeApp();
 
 })();
 
