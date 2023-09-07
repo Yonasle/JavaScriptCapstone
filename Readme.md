@@ -41,6 +41,9 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
+
+
 <details>
   [JavaScript Capstone Project] is a learning project in which it is required to implement HTML/CSS/JavaScript linters.. And build a meduim fidelity wireframe application using ES6, API and WebPack framework..
 </details>
@@ -218,4 +221,4 @@ This project is [MIT](./LICENSE) licensed.
 
 
 
-<p align="right">(<a href
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
