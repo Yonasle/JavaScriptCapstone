@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(230, 196, 196);
+    padding: 1% 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 70px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+  }
+  
+  .logo-container img {
+    max-height: 50px; /* Adjust the logo height as needed */
+    margin-right: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .menu li {
+    margin: 0 15px; /* Adjust the spacing between menu items */
+    position: relative;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+  }
+  
+  .menu span {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu li:hover span {
+    transform: scaleX(1);
+    transform-origin: left center;
+  }
+  
+
+ 
+
+  #list {
+    margin-top: 10%; /* Increase the margin-top for more spacing */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .meal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px; /* Increase the gap for better separation */
+    width: calc(33.33% - 20px); /* Adjust the width for better alignment */
+    padding: 15px; /* Increase padding for a softer look */
+    margin-bottom: 20px; /* Increase margin-bottom for better spacing */
+    border: 1px solid #e0e0e0; /* Use a lighter border color */
+    border-radius: 8px; /* Increase border radius for rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: transform 0.3s;
+  }
+  
+  .meal img {
+    width: 100%;
+    border-radius: 8px; /* Match border radius for consistency */
+  }
+  
+  .meal img:hover {
+    transform: scale(1.05); /* Slightly reduce the scale factor for a smoother hover effect */
+  }
+    /* Updated Modal Styles with New Class Names */
+.modal-beautiful {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.774);
+    backdrop-filter: blur(5px);
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadein;
+    animation-duration: 0.4s;
+  }
+  
+/* Updated Modal Content Styles for a Smaller Modal */
+.modal-content-beautiful {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    width: 90%; /* Adjust the width as needed */
+  }
+  
+  
+  /* Updated Close Button Styles */
+  .close-beautiful {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-beautiful:hover,
+  .close-beautiful:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Updated Item Section Styles */
+  .itemSection-beautiful {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  /* Updated Comment Section Styles */
+  .commentSection-beautiful {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  /* Updated Comment Box Styles */
+  .commentBox-beautiful {
+    display: flex;
+    flex-direction: column;
+    background-color: #efeaea;
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Updated Comment Text Styles */
+  .commentText-beautiful, .comment-name {
+    font-size: medium;
+    color: #5a5858;
+  }
+  
+  /* Updated Date Styles */
+  .date-beautiful {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+ /* Updated Image Styles to Fit Within Modal */
+.img-beautiful {
+    max-width: 100%; /* Ensure the image fits within the modal */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any residual padding/margin */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  /* Updated Styles for the "Add Comment" Button */
+.comments-button-beautiful {
+    background-color: #4CAF50; /* Change the background color */
+    color: white; /* Text color */
+    padding: 12px 20px; /* Padding for the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .comments-button-beautiful:hover {
+    background-color: #45a049; /* Darker background color on hover */
+  }
+  
+  /* Updated Comment Title Styles */
+  .commentTitle-beautiful {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Updated Username Input Styles */
+  .usernameInput-beautiful {
+    margin-bottom: 1rem;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  /* Updated Textarea Styles */
+  .textarea-beautiful {
+    margin-bottom: 1rem;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  /* Updated Likes Container Styles */
+  .likes-container-beautiful {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  /* Updated Likes Icon Styles */
+  .likes-icon-beautiful {
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.4s;
+  }
+  
+  .likes-icon-beautiful:hover {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(230, 196, 196); /* Set your preferred background color */
+    text-align: center;
+    padding: 10px 0;
+}
