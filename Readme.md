@@ -43,7 +43,6 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 
-
 <details>
   [JavaScript Capstone Project] is a learning project in which it is required to implement HTML/CSS/JavaScript linters.. And build a meduim fidelity wireframe application using ES6, API and WebPack framework..
 </details>
