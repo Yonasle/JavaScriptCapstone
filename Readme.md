@@ -1,8 +1,11 @@
 <a name="readme-top"></a>
 <div align="center">
+
+ 
+  
   <br/>
 
-  <h3><b>To do List</b></h3
+  <h3><b>JavaScript Capstone</b></h3
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -31,9 +34,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Kanban] <a name="about-project"></a>
+# 📖 [JavaScript Capstone] <a name="about-project"></a>
 
-**[Kanban]** is a project set to make a board of kanban to set who will do specific task.
+**[JavaScript Capstone]** is a project set to make a board of kanban to set who will do specific task.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,7 +45,7 @@
 
 
 <details>
-  <summary>Kanban Board</summary>
+  [JavaScript Capstone Project] is a learning project in which it is required to implement HTML/CSS/JavaScript linters.. And build a meduim fidelity wireframe application using ES6, API and WebPack framework..
 </details>
 
   <ul>
@@ -56,9 +59,8 @@
 
 > features of the project
 
-- [ ] **[Add a task]**
-- [ ] **[Add update of task]**
-- [ ] **[Divided the task]**
+- [ ] **[Add a comment]**
+- [ ] **[like the Food]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -125,9 +127,12 @@ Example command:
 To run the project, execute the following command:
 
 
-cd Desktop
+cd Desktop/Microverse/JavaScriptCapstone
 live-server
 
+### Persentaion
+
+- Link: (https://drive.google.com/file/d/1n02orUvy-Z2FwmTrGpj6lo2k8-tb2u4G/view?usp=sharing)
 
 ### Deployment
 
@@ -142,11 +147,17 @@ Not available
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Yonas**
+👤 **Yonas Lemma**
 
 - GitHub: [@githubhandle](https://github.com/Yonasle)
 - Twitter: [@twitterhandle](https://twitter.com/Yonasls)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/yonas-lemma-b8848823a/)
+
+👤 **Mohammad Yaser Safi**
+
+- GitHub: [@githubhandle](https://github.com/MohammadYaser)
+- Twitter: [@twitterhandle](https://twitter.com/Yaser_Safi19)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammad-yaser-safi-a12083270)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,9 +167,10 @@ Not available
 
 > The following are the features of the project
 
-- [ ] **[CSS layout]**
-- [ ] **[Add link to each feature]**
-- [ ] **[Using recent update of EcmaScript Feautres]
+-[Linters implementation]
+-[Single Page application]
+-[JavaScript Modules]
+-[Webpack framework]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,7 +180,7 @@ Not available
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Yonasle/JavaScriptCapstone/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -20,11 +20,11 @@ const fetchMealLikes = async (mealName) => {
   return mealLikes ? mealLikes.likes : 0;
 };
 
-const updateLikesCount = (element, count) => {
+const likesCountUpdate = (element, count) => {
   element.textContent = `${count} Likes`;
 };
 
-const sendLike = async (mealName) => {
+const transferLikes = async (mealName) => {
   const requestBody = {
     item_id: mealName,
   };
@@ -43,47 +43,47 @@ const displayMeals = async (meals) => {
   mealListContainer.innerHTML = '';
 
   meals.forEach(async (meal) => {
-    const mealElement = document.createElement('div');
-    mealElement.classList.add('meal');
+    const divMeal = document.createElement('div');
+    divMeal.classList.add('meal');
 
-    const mealImage = document.createElement('img');
-    mealImage.src = `${meal.strMealThumb}/preview`;
-    mealImage.alt = meal.strMeal;
+    const imgMeal = document.createElement('img');
+    imgMeal.src = `${meal.strMealThumb}/preview`;
+    imgMeal.alt = meal.strMeal;
 
     const mealTitle = document.createElement('h3');
     mealTitle.textContent = meal.strMeal;
 
-    const likesContainer = document.createElement('div');
-    likesContainer.classList.add('likes-container-beautiful');
+    const counterLikes = document.createElement('div');
+    counterLikes.classList.add('likes-container-beautiful');
 
     const likesIcon = document.createElement('span');
     likesIcon.classList.add('likes-icon');
     likesIcon.textContent = '❤️';
 
-    const likesCount = document.createElement('span');
-    likesCount.classList.add('likes-count');
+    const countLike = document.createElement('span');
+    countLike.classList.add('likes-count');
 
-    const commentsButton = document.createElement('button');
-    commentsButton.textContent = 'Comments';
-    commentsButton.classList.add('comments-button-beautiful');
+    const btnComment = document.createElement('button');
+    btnComment.textContent = 'Comments';
+    btnComment.classList.add('comments-button-beautiful');
 
-    commentsButton.addEventListener('click', () => popupModal(meal.idMeal));
+    btnComment.addEventListener('click', () => popupModal(meal.idMeal));
 
-    likesContainer.appendChild(likesIcon);
-    likesContainer.appendChild(likesCount);
+    counterLikes.appendChild(likesIcon);
+    counterLikes.appendChild(countLike);
 
-    mealElement.appendChild(mealImage);
-    mealElement.appendChild(mealTitle);
-    mealElement.appendChild(likesContainer);
-    mealElement.appendChild(commentsButton);
+    divMeal.appendChild(imgMeal);
+    divMeal.appendChild(mealTitle);
+    divMeal.appendChild(counterLikes);
+    divMeal.appendChild(btnComment);
 
-    mealListContainer.appendChild(mealElement);
+    mealListContainer.appendChild(divMeal);
 
     const likes = await fetchMealLikes(meal.strMeal);
-    updateLikesCount(likesCount, likes);
+    likesCountUpdate(countLike, likes);
   });
 };
 
 export {
-  fetchCategoryMeals, displayMeals, sendLike, updateLikesCount,
+  fetchCategoryMeals, displayMeals, transferLikes, likesCountUpdate,
 };
