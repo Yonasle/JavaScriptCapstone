@@ -12,17 +12,15 @@ const newBtnAddComment = document.getElementById('new-btnAddComment');
 const newUsernameInput = document.getElementById('new-username');
 const newCommentInput = document.getElementById('new-comment');
 
-const closeModal = () => {
-  newModal.style.display = 'none';
-  clearElements([newItemSection, newCommentsHeading, newCommentSection]);
-};
-
 const clearElements = (elements) => {
   elements.forEach((element) => {
     element.innerHTML = '';
   });
 };
-
+const closeModal = () => {
+  newModal.style.display = 'none';
+  clearElements([newItemSection, newCommentsHeading, newCommentSection]);
+};
 const displayItemDetail = async (id, data, comments) => {
   newModal.style.display = 'flex';
 
