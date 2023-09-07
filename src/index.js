@@ -1,5 +1,5 @@
 import './style.css';
-import './logo.jpg';
+import './logo.png';
 import {
   fetchCategoryMeals, displayMeals, sendLike, updateLikesCount,
 } from './modules/renderList';
