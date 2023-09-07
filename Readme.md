@@ -172,6 +172,7 @@ Not available
 -[Single Page application]
 -[JavaScript Modules]
 -[Webpack framework]
+-[Api Documentation usage]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
