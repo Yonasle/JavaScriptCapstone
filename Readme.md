@@ -40,7 +40,6 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 
-
 <details>
   <summary>Kanban Board</summary>
 </details>
