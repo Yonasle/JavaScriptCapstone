@@ -128,11 +128,12 @@ To run the project, execute the following command:
 
 
 cd Desktop/Microverse/JavaScriptCapstone
+
 live-server
 
 ### Persentaion
 
-- Link: (https://drive.google.com/file/d/1n02orUvy-Z2FwmTrGpj6lo2k8-tb2u4G/view?usp=sharing)
+- Link:(https://drive.google.com/file/d/1n02orUvy-Z2FwmTrGpj6lo2k8-tb2u4G/view?usp=sharing)
 
 ### Deployment
 
