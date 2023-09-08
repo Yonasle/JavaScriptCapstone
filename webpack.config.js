@@ -37,7 +37,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'JavaScriptCapstone$',
+      title: 'JavaScriptCapstone',
       filename: 'index.html',
       template: 'src/index.html',
     }),
